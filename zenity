@@ -1,0 +1,29 @@
+
+   99  cd Desktop
+  100  zenity --info
+  101  zenity --version
+  102  zenity -vẻ
+  103  zenity -vẻr
+  104  zenity -ver
+  105  zenity --notification --text="hello hai"
+  106  zenity --warning
+  107  zenity --error
+  108  zenity --question --test="how are you"
+  109  zenity --question
+  110  date
+  111  cal
+  112  zenity --calender
+  113  zenity --calander
+  114  zenity --calandar
+  115  zenity --calendar
+  116  zenity --file-selection
+  117  zenity --progress
+  118  zenity --scale
+  119  cd ..
+  120  cd linuxOS
+  121  cd LinuxOS
+  122  touch zenity
+  123  history > zenity
+  124  zenity --title "File not found" --error --text="Could not find /var/log/rscapshot log file."
+  125  zenity --title "File not found" --error --text="Could not find /var/log/rscapshot log file." --no-wrap
+  126  history > zenity

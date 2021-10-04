@@ -1,0 +1,97 @@
+    1  sudo update-grub
+    2  sudo apt-get install ibus-unikey
+    3  ibus restart
+    4  clear
+    5  sudo apt update
+    6  sudo apt upgrade
+    7  wget --version
+    8  sudo apt install wget
+    9  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   10  google-chrome
+   11  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   12  google-chrome
+   13  cd LinuxOS
+   14  cd Lab1
+   15  cd file1
+   16  cd Desktop
+   17  ls -l
+   18  clear
+   19  cd ..
+   20  top
+   21  pwd
+   22  cd Desktop
+   23  cd ..
+   24  man
+   25  man ls
+   26  clear
+   27  pwd
+   28  mkdir LinuxOS
+   29  cd LinuxOS
+   30  mkdir Lab1
+   31  cd Lab1
+   32  ls
+   33  pwd
+   34  touch file1
+   35  cat
+   36  cat file1
+   37  ls -l
+   38  sl
+   39  sudo apt-get install sl
+   40  cowsay “Hello, everyone. Toi la …..” >> file1
+   41  sudo apt-get install cowsay
+   42  cowsay “Hello, everyone. Toi la …..” >> file1
+   43  cat file1
+   44  histoy > file2
+   45  history > file2
+   46  cat file2
+   47  figlet “ Enjoy LinuxOS” >> file2
+   48  sudo apt  install figlet
+   49  figlet “ Enjoy LinuxOS” >> file2
+   50  cat file1 file2 > lab1HaiLy19TCLC_DT2
+   51  cat lab1HaiLy19TCLC_DT2
+   52  cd ..
+   53  sudo -i
+   54  ls -l
+   55  cd desktop
+   56  cd ..
+   57  cd Desktopesktop
+   58  cd Desktop
+   59  ls -l
+   60  cd root
+   61  sudo -i
+   62  cd ..
+   63  cd root
+   64  su thanhhai
+   65  cd LinuxOS
+   66  mkdir Lab2
+   67  cd Lab2
+   68  touch filmdb.txt
+   69  gedit filmdb.txt
+   70  sort filmdb.txt
+   71  sort filmdb.txt Năm sản xuất
+   72  sort filmdb.txt
+   73  grep VietNam filmdb.txt
+   74  grep Viet Nam filmdb.txt
+   75  grep My filmdb.txt
+   76  cat file1
+   77  touch file1
+   78  cat file1
+   79  history > lab2LyThanhHai_19TCLC-DT2
+   80  cat filmdb.txt
+   81  history > lab2LyThanhHai_19TCLC-DT2
+   82  history > lab2_LyThanhHai_19TCLC-DT2
+   83  wc -l-c filmdb.txt
+   84  wc –l –c filmdb.txt
+   85  sort 2 filmdb.txt
+   86  sort Năm sản xuất filmdb.txt
+   87  sort 2 filmdb.txt
+   88  grep VietNam filmdb.txt
+   89  sort filmdb.txt 2
+   90  gedit filmdb.txt
+   91  sort -k 2n filmdb.txt
+   92  grep 'vietnam' filmdb.txt
+   93  grep 'Vietnam' filmdb.txt
+   94  grep Vietnam filmdb.txt
+   95  grep VietNam filmdb.txt
+   96  grep My filmdb.txt
+   97  history > lab2_LyThanhHai_19TCLC-DT2

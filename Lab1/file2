@@ -1,0 +1,49 @@
+    1  sudo update-grub
+    2  sudo apt-get install ibus-unikey
+    3  ibus restart
+    4  clear
+    5  sudo apt update
+    6  sudo apt upgrade
+    7  wget --version
+    8  sudo apt install wget
+    9  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   10  google-chrome
+   11  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   12  google-chrome
+   13  pwd
+   14  cd Desktop
+   15  cd ..
+   16  man
+   17  man ls
+   18  clear
+   19  pwd
+   20  mkdir LinuxOS
+   21  cd LinuxOS
+   22  mkdir Lab1
+   23  cd Lab1
+   24  ls
+   25  pwd
+   26  touch file1
+   27  cat
+   28  cat file1
+   29  ls -l
+   30  sl
+   31  sudo apt-get install sl
+   32  cowsay “Hello, everyone. Toi la …..” >> file1
+   33  sudo apt-get install cowsay
+   34  cowsay “Hello, everyone. Toi la …..” >> file1
+   35  cat file1
+   36  histoy > file2
+   37  history > file2
+  //\    _____        _             
+ |/_\|  | ____|_ __  (_) ___  _   _ 
+ / _` | |  _| | '_ \ | |/ _ \| | | |
+| (_| | | |___| | | || | (_) | |_| |
+ \__,_| |_____|_| |_|/ |\___/ \__, |
+                   |__/       |___/ 
+ _     _                   ___  ____   //\  
+| |   (_)_ __  _   ___  __/ _ \/ ___| |/_\| 
+| |   | | '_ \| | | \ \/ / | | \___ \ / _` |
+| |___| | | | | |_| |>  <| |_| |___) | (_| |
+|_____|_|_| |_|\__,_/_/\_\\___/|____/ \__,_|
+                                            
