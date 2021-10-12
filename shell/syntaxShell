@@ -1,8 +1,11 @@
-khai báo biến: varname = value
+khai báo biến: varname=value 
 lấy giá trị biến: $varname
 trước sau dấu = không được có khoảng trắng
 hiển thị biến: echo $name
 đọc dữ liệu nhập vào: read varname
-#!/bin/sh
+#!/bin/sh để mở đầu
 
-
+exit 0 để thoát
+compiling gedit
+chmod u+x file.sh
+./file.sh
