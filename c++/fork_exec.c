@@ -5,7 +5,11 @@
 int spawn(char * program, char* *arg_list)
 {
 	int child_pid = fork();
-	if(child_pid != 0)
+	if(child_pid < 0)
+	{
+		printf("loi tao tien trinh");
+	}
+	else if(child_pid > 0)
 	{
 		sleep(5);
 		return child_pid;
