@@ -3,17 +3,17 @@
 #include <stdlib.h>
 #include <string.h>
 
-//#define N 3
-//#define n 3
 int m, n, k;
-
+double A[100][100];
+double B[100][100];
+double C[100][100];
 struct v
 {
-    size_t i;
-    size_t j;
+    int i;
+    int j;
 };
 
-void nhapA(double A[][n], int m, int n)
+void nhapA(double A[][100], int m, int n)
 {
 	for(int i = 0 ; i < m ; i++)
 	{
@@ -25,7 +25,7 @@ void nhapA(double A[][n], int m, int n)
 	}
 }
 
-void nhapB(double B[][k], int n, int k)
+void nhapB(double B[][100], int n, int k)
 {
 	for(int i = 0 ; i < n ; i++)
 	{
@@ -37,14 +37,19 @@ void nhapB(double B[][k], int n, int k)
 	}
 }
 
-void * multiple(void *arg, double C[][k], double A[][n], double B[][k]){
+void * multiple(void *arg){
     struct v *data = (struct v *)arg;
-
-    size_t l;
-    for(l=0; l < m; l++)
+    int l;
+    for(l=0; l < k; l++)
     {
-        size_t i=(data[l]).i;
-        size_t j=(data[l]).j;
+        printf("l(%d) = %d, %d\t", l, data[l].i, data[l].j);
+    }
+    printf("\n");
+    //int l;
+    for(l=0; l < k; l++)
+    {
+        int i=(data[l]).i;
+        int j=(data[l]).j;
         double sum=0;
         size_t d;
 
@@ -67,30 +72,44 @@ void main()
 	scanf("%d", &n);
 	printf("nhap k = ");
 	scanf("%d", &k);
-	
-	double A[m][n];
-	double B[n][k];
-	double C[m][k];
 
 	nhapA(A, m, n);
 	nhapB(B, n, k);
 	
+	for(int i = 0 ; i < m ; i++)
+	{
+		for(int j = 0 ; j < n ; j++)
+		{
+			printf("A[%d][%d] = %lf\t",i, j, A[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	for(int i = 0 ; i < n ; i++)
+	{
+		for(int j = 0 ; j < k ; j++)
+		{
+			printf("B[%d][%d] = %lf\t",i, j, B[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
 	pthread_t threads[m];
-	size_t i, j;
+	int i, j;
 
 	struct v **data;
 	data = (struct v **)malloc(m * sizeof(struct v*));
 	
 	for(i = 0; i < m; i++)
 	{
-		data[i] = (struct v *)malloc(m * sizeof(struct v));
+		data[i] = (struct v *)malloc(k * sizeof(struct v));
 
 		for(j = 0; j < k; j++)
 		{
 		    data[i][j].i = i;
 		    data[i][j].j = j;
 		}
-		pthread_create(&threads[i], NULL, multiple(data[i], C, A, B), data[i]);
+		pthread_create(&threads[i], NULL, multiple, data[i]);
 	}
 
 	for(i = 0; i < m; i++)
@@ -107,7 +126,6 @@ void main()
 		}
 
 		printf("\n");
-
 		free(data[i]);
 	}
 
