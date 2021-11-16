@@ -37,8 +37,7 @@ int main ()
 	{
 		pthread_create (&threads[i], NULL, &compute_prime, &i);
 	}
-	/* Chờ luồng tính số nguyên tố hoàn thành, và
-	lấy kết quả trả về.*/
+	/* Chờ luồng tính số nguyên tố hoàn thành, và lấy kết quả trả về.*/
 	for(int i = 0; i < m ; i++)
 	{
 		if (!pthread_equal(pthread_self(), threads[i]))
@@ -48,6 +47,6 @@ int main ()
 	{
 		printf("So nguyen to thu %d la %d.\n", i + 1, prime[i]);
 	}
-	
+	pthread_exit(NULL);
 	return 0;
 }
