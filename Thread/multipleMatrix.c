@@ -7,6 +7,7 @@ int m, n, k;
 double A[100][100];
 double B[100][100];
 double C[100][100];
+
 struct v
 {
     int i;
