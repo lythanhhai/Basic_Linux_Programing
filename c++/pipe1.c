@@ -4,14 +4,11 @@
 
 // ghi message vào stream với count lần
 void writer(const char* message, int count, FILE* stream)
-{
-	for (; count > 0; --count)
-	{
-		// ghi vào file stream
-		fprintf (stream, "%s\n", message);
-		fflush(stream);
-		sleep(1);
-	}
+{	
+	int res = atoi(message);
+	fprintf (stream, "%d\n", res * 2);
+	fflush(stream);
+	sleep(1);
 }
 
 // Đọc ngẫu nhiên chuỗi từ stream
@@ -43,7 +40,7 @@ int main()
 		FILE* stream;
 		close (fds[0]);
 		stream = fdopen (fds[1],"w");
-		writer ("Hello, hello, hello!!!", 6, stream);
+		writer ("100", 6, stream);
 		close(fds[1]);
 	}
 	return 0;

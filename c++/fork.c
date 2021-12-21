@@ -16,10 +16,10 @@ int main()
 		printf("ID cua tien trinh con la %d!\n", child_pid);
 		sleep(5);
 	}
-		else 
-		{
-			printf("Day la tien trinh con, voi id la %d %d!\n", (int) getpid(), child_pid);
-		}
+	else 
+	{
+		printf("Day la tien trinh con, voi id la %d %d!\n", (int) getpid(), child_pid);
+	}
 	printf("\n\n");
 	return 0;
 }
