@@ -25,7 +25,7 @@ int main(int argc, char* const argv[])
 	printf("Kich thuoc segment: %d\n", segment_size);
 	
 	/* Ghi mot chuoi len phan doan bo nho dung chung*/
-	sprintf(shared_memory, "Hello, hello, hello111!!!");
+	sprintf(shared_memory, "11");
 	
 	/* Go bo gan ket phan doan bo nho chung*/
 	shmdt(shared_memory); 
